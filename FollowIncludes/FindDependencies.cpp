@@ -5,8 +5,8 @@
 #include <format>
 
 #include "DirectoryExplorer.h"
-#include "SortModules.h"
-#include "Tests.h"
+// #include "SortModules.h"
+// #include "Tests.h"
 
 
 
@@ -22,23 +22,5 @@ int main(int argc, char* argv[])
 
     DirectoryExplorer explorer{verbose};
     explorer.Execute(directory_dir);
-
-#if 0
-    TopologicalSort sorter;
-
-
-    for (auto& mod : Include::all_Includes)
-    {
-        // is mod in Vertex::all_vertices
-        auto ret = Vertex::find(mod);
-        assert(ret.get() != nullptr);
-    }
-
-    sorter.Execute();
-    sorter.PrintOrderedVertices();
-    sorter.PrintImportExportAll();
-    sorter.Verify();
-    //sorter.Save(Compiler::Microsoft, directory_dir, destination_dir);
-#endif
 }
 

@@ -132,18 +132,12 @@
     <ClCompile Include="FindDependencies.cpp" />
     <ClCompile Include="Include.cpp" />
     <ClCompile Include="Parser.cpp" />
-    <ClCompile Include="SortModules.cpp" />
-    <ClCompile Include="Tests.cpp" />
-    <ClCompile Include="TopologicalSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DirectoryExplorer.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="printer.h" />
-    <ClInclude Include="SortModules.h" />
-    <ClInclude Include="Tests.h" />
-    <ClInclude Include="TopologicalSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

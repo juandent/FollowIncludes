@@ -3,7 +3,7 @@
 #include <fstream>
 
 #include "Parser.h"
-#include "TopologicalSort.h"
+
 
 
 class DirectoryExplorer
@@ -35,14 +35,14 @@ public:
 		// must verify source is a file
 		if (!is_regular_file(source))	return;
 
-		ifstream in;
-		in.open(source.string(), ios::in);
+		std::ifstream in;
+		in.open(source.string(), std::ios::in);
 		if(! in.good())
 		{
 			throw std::exception("Error opening source file");
 		}
-		ofstream out;
-		out.open(destination.string(), ios::trunc | ios::out);
+		std::ofstream out;
+		out.open(destination.string(), std::ios::trunc | std::ios::out);
 		if(! out.good())
 		{
 			throw std::exception("Error opening destination file");
@@ -52,7 +52,7 @@ public:
 		{
 			std::getline(in, line);
 			out.write(line.c_str(), line.size());
-			out << endl;
+			out << std::endl;
 		}
 		while (in.good() && out.good());
 		in.close();
@@ -66,14 +66,14 @@ public:
 		// must verify source is a file
 		if (!is_regular_file(source))	return true;
 
-		ifstream orig;
-		orig.open(source.string(), ios::in);
+		std::ifstream orig;
+		orig.open(source.string(), std::ios::in);
 		if (!orig.good())
 		{
 			throw std::exception("Error opening source file");
 		}
-		ifstream dest;
-		dest.open(destination.string(), ios::in);
+		std::ifstream dest;
+		dest.open(destination.string(), std::ios::in);
 		if (!dest.good())
 		{
 			throw std::exception("Error opening destination file");
