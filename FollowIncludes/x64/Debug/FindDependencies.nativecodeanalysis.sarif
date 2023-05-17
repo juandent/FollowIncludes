@@ -1,0 +1,91 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/finddependencies.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "1dc690ed08eab07b33d0c2aba16cc81b53b816ecf43e0f835733f4a47afc7f44"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/directoryexplorer.h"
+          },
+          "hashes": {
+            "sha-256": "e72fab53d960acff1accbd3ca66bbac3be3b07d15c2dbe653dfe5c67e9f65318"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/parser.h"
+          },
+          "hashes": {
+            "sha-256": "8f368b5ecfe978f5967f11992d3943fbe7a575efcee9f58e95c2576e176792ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/include.h"
+          },
+          "hashes": {
+            "sha-256": "7682559ec36478d9ee698479f6531e5c3ff3ef2a4da7aa9508098ed71c3f5b89"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/printer.h"
+          },
+          "hashes": {
+            "sha-256": "9a7a9ab37ce58de3330ab2dffaadbc8d8024695298c11b2b806e92e4c3650d4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/topologicalsort.h"
+          },
+          "hashes": {
+            "sha-256": "3ce5894b26652bc2699746e4ee7a346de7ffb992068601e21a720b0f07bdec04"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/sortmodules.h"
+          },
+          "hashes": {
+            "sha-256": "b2f5bcbbf07f0c265d7863bd7aacea0f3c052d6fd6a26f1cae47baff981e2a6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/tests.h"
+          },
+          "hashes": {
+            "sha-256": "05113f9255e4fffebfc11dc566889c62fea22267ea1a10e817a3bdfb231a02d5"
+          }
+        }
+      ]
+    }
+  ]
+}

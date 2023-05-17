@@ -1,0 +1,67 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/sortmodules.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "d2570d8c06cf9822c180b810d91421fad54fc5877039c8f4b4b0a43e3bded4b7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/sortmodules.h"
+          },
+          "hashes": {
+            "sha-256": "b2f5bcbbf07f0c265d7863bd7aacea0f3c052d6fd6a26f1cae47baff981e2a6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/topologicalsort.h"
+          },
+          "hashes": {
+            "sha-256": "3ce5894b26652bc2699746e4ee7a346de7ffb992068601e21a720b0f07bdec04"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/include.h"
+          },
+          "hashes": {
+            "sha-256": "7682559ec36478d9ee698479f6531e5c3ff3ef2a4da7aa9508098ed71c3f5b89"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/printer.h"
+          },
+          "hashes": {
+            "sha-256": "9a7a9ab37ce58de3330ab2dffaadbc8d8024695298c11b2b806e92e4c3650d4c"
+          }
+        }
+      ]
+    }
+  ]
+}

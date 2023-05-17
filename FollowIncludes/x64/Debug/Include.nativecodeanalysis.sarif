@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.35.32217.1",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/include.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "29e953d38a9d5084abdc9a194e13490cab8b7e1973e073a4daf6e8b9f53deafe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/include.h"
+          },
+          "hashes": {
+            "sha-256": "7682559ec36478d9ee698479f6531e5c3ff3ef2a4da7aa9508098ed71c3f5b89"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///q:/c++/modulardependencies/followincludes/followincludes/printer.h"
+          },
+          "hashes": {
+            "sha-256": "9a7a9ab37ce58de3330ab2dffaadbc8d8024695298c11b2b806e92e4c3650d4c"
+          }
+        }
+      ]
+    }
+  ]
+}
